@@ -14,7 +14,7 @@ export default function Hero() {
         autoPlay
         loop
 >
-      >
+    
         <source src="/videos/presentacion.mp4" type="video/mp4" />
       </video>
 
