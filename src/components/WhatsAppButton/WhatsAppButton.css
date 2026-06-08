@@ -1,0 +1,33 @@
+.whatsapp{
+  position:fixed;
+
+  right:15px;
+  bottom:15px;
+
+  width:60px;
+  height:60px;
+
+  border-radius:50%;
+
+  background:#25D366;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  color:white;
+  font-weight:700;
+
+  box-shadow:0 4px 15px rgba(0,0,0,.2);
+
+  z-index:999;
+}
+
+@media(min-width:768px){
+
+  .whatsapp{
+    right:25px;
+    bottom:25px;
+  }
+
+}

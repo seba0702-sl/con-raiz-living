@@ -1,0 +1,39 @@
+.categories{
+  display:grid;
+  gap:20px;
+}
+
+.category-card{
+  position:relative;
+  overflow:hidden;
+  border-radius:16px;
+}
+
+.category-card img{
+  height:280px;
+  object-fit:cover;
+}
+
+.category-card h3{
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  color:white;
+  font-size:1.6rem;
+}
+
+@media(min-width:768px){
+
+  .categories{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(min-width:1200px){
+
+  .categories{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+}
