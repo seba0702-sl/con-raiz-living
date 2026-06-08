@@ -7,14 +7,10 @@ export default function Hero() {
       <video
         className="hero-video"
         autoPlay
-        /*muted*/
+        muted
         loop
         playsInline
-        controlsa
-        autoPlay
-        loop
->
-    
+      >
         <source src="/videos/presentacion.mp4" type="video/mp4" />
       </video>
 
