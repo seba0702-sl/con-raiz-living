@@ -22,13 +22,7 @@ export default function Hero() {
           eventos sociales y corporativos.
         </p>
 
-        <a
-          href="https://wa.me/5491111111111"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Solicitar Presupuesto
-        </a>
+        
       </div>
 
     </section>
