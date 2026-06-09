@@ -37,3 +37,13 @@
   cursor:pointer;
   font-weight:600;
 }
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
