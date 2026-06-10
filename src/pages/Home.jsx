@@ -17,17 +17,11 @@ export default function Home() {
         </p>
       </section>
       <Beneficios/>
-      <section>
-        <h2>Nuestros Productos</h2>
-      </section>
-
-      <section>
-        <h2>Galería</h2>
-      </section>
-
-      <section>
-        <h2>Contacto</h2>
-      </section>
+      <section className="home-links">
+  <a href="/productos">Nuestros Productos</a>
+  <a href="/galeria">Galería</a>
+  <a href="/contacto">Contacto</a>
+</section>
     </>
   );
 }

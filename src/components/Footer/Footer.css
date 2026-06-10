@@ -42,16 +42,21 @@
 .footer-social {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  margin-top: 10px;
+  gap: 30px;
+  margin-top: 15px;
 }
 
 .footer-social a {
-  font-size: 1.5rem;
+  font-size: 2.8rem;
   color: inherit;
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .footer-social a:hover {
   transform: scale(1.15);
+}
+@media (max-width: 768px) {
+  .footer-social a {
+    font-size: 2rem;
+  }
 }

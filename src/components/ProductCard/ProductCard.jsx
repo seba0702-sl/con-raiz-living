@@ -14,7 +14,7 @@ export default function ProductCard({ product }) {
       <p>{product.description}</p>
 
       <a
-        href={`https://wa.me/5491111111111?text=Consulta ${product.name}`}
+        href={`https://wa.me/5491161489119?text=Consulta ${product.name}`}
       >
         Consultar
       </a>
