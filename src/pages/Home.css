@@ -37,3 +37,20 @@
   }
 
 }
+
+.seo-text {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.seo-text h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.seo-text p {
+  line-height: 1.8;
+  color: #666;
+}
