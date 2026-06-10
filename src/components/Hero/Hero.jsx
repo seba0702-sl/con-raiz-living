@@ -15,14 +15,15 @@ export default function Hero() {
       </video>
 
       <div className="overlay">
-        <h1>Mobiliario para Eventos</h1>
+        <h1>Con Raíz Living</h1>
 
         <p>
-          Sillas, mesas y livings para
-          eventos sociales y corporativos.
+          Mobiliario y ambientación para eventos.
+          Creamos espacios cálidos, elegantes y
+          llenos de personalidad para momentos inolvidables.
         </p>
 
-        
+
       </div>
 
     </section>

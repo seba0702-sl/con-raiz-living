@@ -1,65 +1,116 @@
-.hero{
-  position:relative;
-  height:100vh;
-  overflow:hidden;
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
 
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-video{
-  position:absolute;
+.hero-video {
+  position: absolute;
+  inset: 0;
 
-  top:0;
-  left:0;
+  width: 100%;
+  height: 100%;
 
-  width:100%;
-  height:100%;
+  object-fit: cover;
 
-  object-fit:cover;
-
-  z-index:1;
+  z-index: 1;
 }
 
-.overlay{
-  position:absolute;
-  inset:0;
+.overlay {
+  position: absolute;
+  inset: 0;
 
-  background:rgba(0,0,0,.45);
+  background: rgba(0, 0, 0, 0.45);
 
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  text-align:center;
+  text-align: center;
 
-  color:white;
+  color: white;
 
-  padding:20px;
+  padding: 20px;
 
-  z-index:2;
+  z-index: 2;
 }
 
-.overlay h1{
-  font-size:4rem;
-  margin-bottom:20px;
+.overlay h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  max-width: 900px;
 }
 
-.overlay p{
-  max-width:700px;
-  font-size:1.2rem;
-  margin-bottom:30px;
+.overlay p {
+  max-width: 700px;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
-.overlay a{
-  background:white;
-  color:#333;
+.overlay a {
+  background: white;
+  color: #333;
 
-  padding:14px 30px;
+  padding: 14px 30px;
 
-  border-radius:999px;
+  border-radius: 999px;
 
-  font-weight:600;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.overlay a:hover {
+  transform: translateY(-2px);
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+  }
+
+  .overlay {
+    padding: 30px 20px;
+  }
+
+  .overlay h1 {
+    margin-bottom: 15px;
+  }
+
+  .overlay p {
+    max-width: 90%;
+  }
+}
+
+/* CELULAR */
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 70vh;
+  }
+
+  .overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .overlay a {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
 }
