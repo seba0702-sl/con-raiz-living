@@ -1,7 +1,10 @@
+import GalleryGrid from "../components/GalleryGrid/GalleryGrid";
+
 export default function Gallery() {
   return (
-    <div>
+    <main>
       <h1>Galería</h1>
-    </div>
+      <GalleryGrid />
+    </main>
   );
 }
