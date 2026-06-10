@@ -31,8 +31,18 @@ export default function GalleryGrid() {
       modules={[Navigation, Pagination, Autoplay]}
       navigation
       pagination={{ clickable: true }}
-      autoplay={{ delay: 4000 }}
+      autoplay={{ delay: 2500 }}
       loop
+      spaceBetween={20}
+      slidesPerView={1}
+      breakpoints={{
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      }}
     >
       {fotos.map((foto, index) => (
         <SwiperSlide key={index}>
